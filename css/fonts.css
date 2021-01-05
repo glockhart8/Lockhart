@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Gravity_Regular;
+    src: url('./fonts/GravityRegular/Gravity-Book.eot');
+    src: url('./fonts/GravityRegular/Gravity-Book.woff2') format('woff2'),
+         url('./fonts/GravityRegular/Gravity-Book.woff') format('woff'),
+         url('./fonts/GravityRegular/Gravity-Book.ttf') format('truetype'),
+         url('./fonts/GravityRegular/Gravity-Book.svg#customFont') format('svg'),
+         url('./fonts/GravityRegular/Gravity-Book.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}

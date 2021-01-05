@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rainbow Six Siege database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="r6.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="maps.js"></script>
+</head>
+<body>
+    <div id="divDefs">
+        <table id="tblLeads" >
+            <tr bgcolor="gray">
+                <th>Name  </th>
+                <th>Floors  </th>
+                <th>Operator  </th>
+            </tr>
+        </table>
+    </div>
+    <input id="showButton" type="submit" value="Add Entry" onclick="showForm()" class="addEntry"/>
+    <div id="divFields" class="form-style-3" style="display: none;">
+        <form>
+        <fieldset><legend>Student</legend>
+            <label for="field1"><span>Name <span class="required">:</span></span><input type="text" id="txtName"  class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>Floor <span class="required">:</span></span><input type="text" id="txtFloor" class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>Operator <span class="required">:</span></span><input type="text" id="txtOperator" class="input-field" name="field1" value="" /></label>
+        </select></label>
+        </form>
+        </div>
+        <label></label><input id="submitClick" type="submit" value="Submit" onclick="submitClick()" class="addEntry" style="display: none;" /></label>
+        <label><input id="editSubmit" type="submit" value="Edit" onclick="submitEditClick()" class="addEntry" style="display: none;" /></label>
+        <a href="https://griffinlockhart.com/myWork/REST_api/r6_siege/operators.html">
+            <div class="class1"><h2>Operators</h2></div>
+        </a>
+        <img src="./images/operators.jpg" class="center"><a href="https://griffinlockhart.com/myWork/REST_api/r6_siege/guns.html">
+            <div class="class1"><h2>Guns</h2></div>
+        </a>
+        <img src="./images/guns.jpg" class="center">        
+
+</body>
+</html>

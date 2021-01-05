@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Gravity-BoldItalic';
+  src: url('Gravity-BoldItalic.eot');
+  src: url('Gravity-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('Gravity-BoldItalic.svg#Gravity-BoldItalic') format('svg'),
+       url('Gravity-BoldItalic.ttf') format('truetype'),
+       url('Gravity-BoldItalic.woff') format('woff'),
+       url('Gravity-BoldItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

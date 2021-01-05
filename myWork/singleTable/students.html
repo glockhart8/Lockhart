@@ -1,0 +1,47 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Students database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="students.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="students.js"></script>
+</head>
+<body>
+    <div id="divDefs">
+        <table id="tblLeads" >
+            <tr bgcolor="Green">
+                <th>First Name  </th>
+                <th>Last Name  </th>
+                <th>Address  </th>
+                <th>City  </th>
+                <th>State  </th>
+                <th>Zip  </th>
+                <th>Phone  </th>
+                <th>Email  </th>
+                <th>Major  </th>
+            </tr>
+        </table>
+    </div>
+    <input id="showButton" type="submit" value="Add Entry" onclick="showForm()" class="addEntry"/>
+    <div id="divFields" class="form-style-3" style="display: none;">
+        <form>
+        <fieldset><legend>Student</legend>
+            <label for="field1"><span>Last Name <span class="required">:</span></span><input type="text" id="txtLastName"  class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>First Name <span class="required">:</span></span><input type="text" id="txtFirstName" class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>Address <span class="required">:</span></span><input type="text" id="txtAddress" class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>City <span class="required">:</span></span><input type="text" id="txtCity" class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>State <span class="required">:</span></span><input type="text" id="txtState" class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>Zip <span class="required">:</span></span><input type="text" id="txtZip" class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>Phone <span class="required">:</span></span><input type="text" id="txtPhone" class="input-field" name="field1" value="" /></label>
+            <label for="field2"><span>Email <span class="required">:</span></span><input type="email" id="txtEmail" class="input-field" name="field2" value="" /></label>
+            <label for="field3"><span>Major <span class="required">:</span></span><input type="text" id="txtMajor" class="input-field" name="field3" value="" /></label>
+        </select></label>
+        </form>
+        </div>
+            <label></label><input id="submitClick" type="submit" value="Submit" onclick="submitClick()" class="addEntry" style="display: none;" /></label>
+            <label><input id="editSubmit" type="submit" value="Edit" onclick="submitEditClick()" class="addEntry" style="display: none;" /></label>
+</body>
+</html>

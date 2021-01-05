@@ -1,0 +1,31 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>STA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/schedules.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="column left">
+            <input id="address" type="text" value="Cheney, WA">
+            <button id="submitAddress" onclick="submitAddress();">Load Map</button>
+            <p id="demo"></p>
+            <div id='mapid'></div>
+        </div>
+
+        <div class="column right" style="height: 100%; overflow-y: auto;">
+            <input type="text" id="busstop-id" value="Enter Onestop ID">
+            <input type="button" value="Get Bus Stop Info" onclick="getStopInfo();">
+            <div id="stop-info"></div>
+            <div id="route-info"></div>
+        </div>
+    </div>
+</body>
+</html>

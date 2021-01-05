@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>A word is a word</title>
+</head>
+<body>
+<h1>Enter any word!</h1>
+<input type="text" class="display" id="readout" name="readout" size="20" value="" maxlength="20"  style="position:absolute; left:1px; top:65px;"/></body>
+<button type="button" id="submit" name="submit" value="" onclick="click_submit()" style="position:absolute; top:65px; left: 150px;">Submit</button>
+<br>Definition:
+<div id="logDefinition"></div>
+<br>Anagram:
+<div id="logAnagrams"></div>
+<br>Translation (spanish):
+<div id="logTranslation"></div>
+<br>Synonyms and Antynyms:
+<div id="logSynAnt"></div>
+
+</body>
+<script type="text/javascript">
+
+    function getWordInfo(word)
+    {
+	    url = "./api/api_translation.php";
+	    map = {word: word};
+
+	    $.get("./api/api_translation.php",map,getDefTran,"json");
+	    $.get("./api/api_anagram.php",map,getAnagram,"json");
+	    $.get("./api/api_synant.php",map,getAntSyn,"json");
+    }
+
+    function getAnagram(anagrams)
+    {
+        $('#logAnagrams').empty();
+        $('#logAnagrams').append(anagrams.best.join(', '));
+    }
+
+    function getDefTran(definition)
+    {
+        $('#logTranslation').empty();
+        $('#logDefinition').empty();
+
+        let datas = definition.tuc;
+
+        for (let i = 0; i < definition.tuc.length && i < 5; i++) {
+
+            let data = datas[i];
+            if(definition.tuc[i].hasOwnProperty('phrase')) {
+                $('#logTranslation').append(data.phrase.text + "<br>");
+            }
+            if(definition.tuc[i].hasOwnProperty('meanings')) {
+                $('#logDefinition').append("-" + data.meanings[0].text + "<br>");
+            }
+        }
+    }
+
+    function getAntSyn(word) {
+    $('#logSynAnt').empty();
+    word = JSON.stringify(word);
+    for(let i = 0; i < word.length; i++)
+        if(word[i] != '{' && word[i] != '"' && word[i] != '}') 
+        {
+            $('#logSynAnt').append(word[i]);
+            if(word[i] == ',' || word[i] == ':')
+                $('#logSynAnt').append(' ');
+            if(word[i] == ']') {
+                $('#logSynAnt').append('<br><br>');
+                i++;
+                i++;
+            }
+        }
+    }
+
+    function click_submit()
+    {
+        var output = document.getElementById("readout");
+        getWordInfo(output.value);
+
+    }
+
+</script>
+</html>

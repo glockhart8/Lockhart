@@ -1,0 +1,213 @@
+.pageTitle {
+    font-family: Gravity_Regular;
+    text-align: center;
+}
+
+.paragraph {
+    font-family: Gravity_Regular;
+    font-size: 2vw;
+    display: inline;
+}
+
+.paragraphCentered {
+    font-family: Gravity_Regular;
+    font-size: 28pt;
+    text-align: center;
+    display: inline;
+    color: rgb(11, 152, 222);
+}
+
+.workTitle {
+    display: block;
+    background-color:rgb(102, 102, 102);
+    text-align: center;
+    
+    padding-bottom: 20pt;
+    padding-top: 20pt;
+
+    margin-top: -2%;
+    margin-right: -1%;
+    margin-left: -1%;
+    margin-bottom: 1%;
+}
+
+/* Menu & Footer */
+
+
+.menu {
+    overflow: hidden;
+}
+
+.menu a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: Gravity_Regular;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.menu a:hover {
+    background-color: gray;
+    color: black;
+}
+
+.menu a.active {
+    background-color: gray;
+    color: black;
+}
+
+footer {
+    position: relative;
+    font-family: Gravity_Bold;
+    color: white;
+    background-color:gray;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* End Menu & Footer */
+
+/* Images */
+
+.images {
+    height: auto;
+    width: 48%;
+    margin-left: 1%;
+    margin-right: .5%;
+    margin-top: .5%;
+    margin-bottom: 1%;
+}
+
+.images:hover {
+    -moz-box-shadow: 0 0 10px rgb(0, 0, 0);
+    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.titleImage {
+    display: block;
+    height: 450px;
+    position: relative;
+    padding-bottom: 7pt;
+    width: auto;
+}
+
+.titleImage img {
+    left: -20px;
+    position: absolute;
+    top: -20px;
+}
+
+
+.imageLink {
+    height: auto;
+    width: auto;
+
+    display: block;
+    
+    padding-top: 5pt;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* End Images */
+
+/* Text layed over image */
+
+.center-fit {
+    max-width: 100%;
+    max-height: auto;
+    margin: auto;
+}
+
+h2 { 
+    position: absolute; 
+    top: 15%; 
+    left: 0;
+    width: 100%; 
+    z-index: 0;
+}
+
+h2 span { 
+color: black; 
+font-family: "Gravity_Regular";
+letter-spacing: 5px; 
+background: rgb(0, 0, 0); 
+background: rgba(11, 152, 222, 0.2); padding: 10px; 
+}
+
+h2 span.spacer { padding:0 100px; } 
+
+/* End text layed over image */
+
+/* Editing Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #a6a6a6;
+    box-shadow: inset 0 0 6px rgb(11, 152, 222);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+/* End Editing Scroll Bar */ 
+
+/* Grid Alignment  */
+
+.grid {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+.grid img {
+        height: 500px;
+        width: auto;
+}
+.grid img:hover {
+    -moz-box-shadow: 0 0 10px rgb(0, 0, 0);
+    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+/* End Grid Alignment */
+
+/* Fonts  */
+@font-face {
+    font-family: Gravity_Regular;
+    src: url('./fonts/GravityRegular/Gravity-Book.eot');
+    src: url('./fonts/GravityRegular/Gravity-Book.woff2') format('woff2'),
+         url('./fonts/GravityRegular/Gravity-Book.woff') format('woff'),
+         url('./fonts/GravityRegular/Gravity-Book.ttf') format('truetype'),
+         url('./fonts/GravityRegular/Gravity-Book.svg#customFont') format('svg'),
+         url('./fonts/GravityRegular/Gravity-Book.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Gravity_Bold;
+    src: url('./fonts/GravityBold/Gravity-Bold.eot');
+    src: url('./fonts/GravityBold/Gravity-Bold.woff2') format('woff2'),
+         url('./fonts/GravityBold/Gravity-Bold.woff') format('woff'),
+         url('./fonts/GravityBold/Gravity-Bold.ttf') format('truetype'),
+         url('./fonts/GravityBold/Gravity-Bold.svg#customFont') format('svg'),
+         url('./fonts/GravityBold/Gravity-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* END Fonts */

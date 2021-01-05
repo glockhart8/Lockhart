@@ -1,0 +1,75 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rainbow Six Siege database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="r6.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="operators.js"></script>
+</head>
+<body>
+    <div id="divDefs" style="display: none;">
+        <table id="tblLeads" >
+            <tr bgcolor="gray">
+                <th>Name  </th>
+                <th>Side  </th>
+                <th>Speed  </th>
+                <th>Ability  </th>
+                <th>Gun  </th>
+                <th>Map  </th>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- Add Entry Form -->
+    <input id="showButton" type="submit" value="Add Entry" onclick="showForm()" class="addEntry"/>
+    <div id="divFields" class="form-style-3" style="display: none;">
+        <form>
+        <fieldset><legend>Student</legend>
+            <label for="field1"><span>Name <span class="required">:</span></span><input type="text" id="txtName"  class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>Side <span class="required">:</span></span><input type="text" id="txtSide" class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>Speed <span class="required">:</span></span><input type="text" id="txtSpeed" class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>Ability <span class="required">:</span></span><input type="text" id="txtAbility" class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>Gun <span class="required">:</span></span><input type="text" id="txtGun" class="input-field" name="field1" value="" /></label>
+            <label for="field1"><span>Map <span class="required">:</span></span><input type="text" id="txtMap" class="input-field" name="field1" value="" /></label>
+        </select></label>
+        </form>
+    </div>
+
+    <!-- Search By Name Form -->
+    <div id="divName" class="form-style-3" style="display: none;">
+        <form>
+        <fieldset><legend>Search By Name</legend>
+            <label for="field1"><span>Name <span class="required">:</span></span><input type="text" id="txtSearchName"  class="input-field" name="field1SearchName" value="" /></label>
+        </select>
+        </form>
+    </div>
+
+    <!-- Search By Side Form -->
+    <div id="divSide" class="form-style-3" style="display: none;">
+        <form>
+        <fieldset><legend>Search By Side</legend>
+            <label for="field1"><span>Side <span class="required">:</span></span><input type="text" id="txtSearchSide"  class="input-field" name="field1SearchSide" value="" /></label>
+        </select>
+        </form>
+    </div>
+    <label><input id="submitClick" type="submit" value="Submit" onclick="submitClick()" class="addEntry" style="display: none;" /></label>
+    <label><input id="editSubmit" type="submit" value="Edit" onclick="submitEditClick()" class="addEntry" style="display: none;" /></label>
+    <label><input id="searchNameSubmit" type="submit" value="Search" onclick="searchNameSubmit(document.getElementById('txtSearchName'))" class="addEntry" style="display: none;" /></label>
+    <label><input id="searchSideSubmit" type="submit" value="Search" onclick="searchSideSubmit(document.getElementById('txtSearchSide'))" class="addEntry" style="display: none;" /></label>
+    <label><input id="searchByName" type="submit" value="Search By Operator Name" onclick="searchByName()" class="addEntry"></label>
+    <label><input id="searchBySide" type="submit" value="Search By Operator Side" onclick="searchBySide()" class="addEntry"></label>
+    <label><input id="showAll" type="submit" value="Show All Operators" onclick="showAll()" class="addEntry"></label>
+    <label><input id="hideAll" type="submit" value="Hide All Operators" onclick="hideAll()" class="addEntry" style="display: none;"></label>
+    <a href="https://griffinlockhart.com/myWork/REST_api/r6_siege/maps.html">
+        <div class="class1"><h2>Maps</h2></div>
+    </a>
+    <img src="./images/maps.jpg" class="center">
+    <a href="https://griffinlockhart.com/myWork/REST_api/r6_siege/guns.html">
+        <div class="class1"><h2>Guns</h2></div>
+    </a>
+    <img src="./images/guns.jpg" class="center">
+</body>
+</html>

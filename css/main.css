@@ -1,3 +1,5 @@
+/* Text */
+
 .pageTitle {
     font-family: Gravity_Regular;
     text-align: center;
@@ -31,8 +33,9 @@
     margin-bottom: 1%;
 }
 
-/* Menu & Footer */
+/* End Text  */
 
+/* Menu & Footer */
 
 .menu {
     overflow: hidden;
@@ -40,7 +43,7 @@
 
 .menu a {
     float: left;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     font-family: Gravity_Regular;
@@ -75,6 +78,13 @@ footer {
 
 /* Images */
 
+.landing_image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .images {
     height: auto;
     width: 48%;
@@ -89,21 +99,6 @@ footer {
     -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
-
-.titleImage {
-    display: block;
-    height: 450px;
-    position: relative;
-    padding-bottom: 7pt;
-    width: auto;
-}
-
-.titleImage img {
-    left: -20px;
-    position: absolute;
-    top: -20px;
-}
-
 
 .imageLink {
     height: auto;
@@ -137,11 +132,11 @@ h2 {
 }
 
 h2 span { 
-color: black; 
+color: white; 
 font-family: "Gravity_Regular";
 letter-spacing: 5px; 
 background: rgb(0, 0, 0); 
-background: rgba(11, 152, 222, 0.2); padding: 10px; 
+background:gray; padding: 10px; 
 }
 
 h2 span.spacer { padding:0 100px; } 

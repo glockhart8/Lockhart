@@ -43,7 +43,7 @@
 
 .menu a {
     float: left;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     font-family: Gravity_Regular;
@@ -58,7 +58,7 @@
 
 .menu a.active {
     background-color: gray;
-    color: black;
+    color: white;
 }
 
 footer {
@@ -85,58 +85,20 @@ footer {
     background-size: cover;
 }
 
-.images {
-    height: auto;
-    width: 48%;
-    margin-left: 1%;
-    margin-right: .5%;
-    margin-top: .5%;
-    margin-bottom: 1%;
-}
-
-.images:hover {
-    -moz-box-shadow: 0 0 10px rgb(0, 0, 0);
-    -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
-    box-shadow: 0 0 10px rgb(0, 0, 0);
-}
-
-.imageLink {
-    height: auto;
-    width: auto;
-
-    display: block;
-    
-    padding-top: 5pt;
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
 /* End Images */
 
 /* Text layed over image */
 
-.center-fit {
-    max-width: 100%;
-    max-height: auto;
-    margin: auto;
-}
-
 .titleText { 
-    font-size: 24pt;
+    font-size: 26pt;
     position: absolute; 
-    top: 15%; 
-    left: 0;
-    width: 100%; 
-    z-index: 0;
+    top: 20%; 
 }
 
 .titleText span { 
 color: white; 
-font-family: "Gravity_Regular";
-letter-spacing: 5px; 
-background: rgb(0, 0, 0); 
+font-family: Gravity_Regular;
+letter-spacing: 8px; 
 background:gray; padding: 10px; 
 }
 
@@ -173,11 +135,11 @@ h2 span.spacer { padding:0 100px; }
 .grid img {
     width: 100%;
 }
-.grid img:hover {
+/* .grid img:hover {
     -moz-box-shadow: 0 0 10px rgb(0, 0, 0);
     -webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
     box-shadow: 0 0 10px rgb(0, 0, 0);
-}
+} */
 /* End Grid Alignment */
 
 /* Fonts  */
@@ -206,3 +168,69 @@ h2 span.spacer { padding:0 100px; }
 }
 
 /* END Fonts */
+
+/* Contact Us  */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style Inputs  */
+.field {
+    font-family: Gravity_Bold;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    width: 50%;
+    margin-top: 6px;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide,
+ make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+/* End Style Inputs */
+
+/* End Contact Us  */

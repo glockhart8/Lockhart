@@ -1,3 +1,7 @@
+<%@ page import="com.javapapers.java.mail.JavaEmail"%>
+<%@ page import="javax.mail.MessagingException;"%>
+
+
 <!DOCTYPE <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
@@ -7,13 +11,15 @@
     <link href="https://fonts.googleapis.com/css?family=Orienta" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <script src="js/main.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script> -->
+
 </head>
 <body>
     <div class="menu">
         <a href="./index.html">Home</a>
         <a href="./photoGallery.html">Photo Gallery</a>        
         <a class="active" href="./contact.html">Contact</a>
-        <a href="./about.html">About</a>
+        <!-- <a href="./about.html">About</a> -->
     </div>
     <div class="titleImage">
 
@@ -25,20 +31,18 @@
             <p style="font-family: Gravity_Regular;">DM me on <a style="color: burlywood;" href="https://www.instagram.com/griffinjl8/">Instagram</a>
             or leave me a message here:</p>
         </div>
-        <div class="row">
-            <div class="column">
-                <form accept="/action_page.php">
-                    <label class="field" for="fname">First Name</label>
-                    <input class="field" type="text" id="fname" name="firstname" placeholder="Your First Name..">
-                    <label class="field" for="lname">Last Name</label>
-                    <input class="field" type="text" id="lname" name="lastname" placeholder="Your Last Name..">
-                    <label class="field" for="subject">Subject</label>
-                    <textarea class="field" id="subject" name="subject" placeholder="Write Your Message Here.."
-                    style="height: 170px;"></textarea>
-                    <input class="field" type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
+        <form role="form" method="POST" accept="./action_page.php" id="contact-form">
+            <label class="field" for="fname">First Name</label>
+            <input class="field" type="text" id="fname" name="firstname" placeholder="Your First Name..">
+            <label class="field" for="lname">Last Name</label>
+            <input class="field" type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+            <label class="field" for="email">Email</label>
+            <input class="field" type="text" id="email" name="email" placeholder="Your Email..">
+            <label class="field" for="message">Subject</label>
+            <textarea class="field" id="message" name="message" placeholder="Write Your Message Here.."
+            style="height: 170px;"></textarea>
+            <input class="field" type="submit" value="Submit">
+        </form>
     </div>
 
     <footer>

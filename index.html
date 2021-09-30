@@ -7,33 +7,25 @@
     <link href="https://fonts.googleapis.com/css?family=Orienta" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/fonts.css">
-    <script src="js/main.js"></script>
 </head>
 <body>
     <div id="header">
-        <a href="/" id="main_logo" title="Home">
+        <a href="index.html" id="main_logo" title="Home">
             <img class="banner_logo" src="./photos/LOCKHART.png">
         </a>
     </div>
-    <div id="header-menu">
-        <div id="header-menu-inside" class="container_12 clearfix">
-            <div class="grid_1">
-                <div id="navigation" class="clearfix">
-                    <div class="region region-navigation">
-                        <div id="block-system-main-menu" class="block block-system block-menu">
-                            <div class="content">
-                                <ul class="menu">
-                                    <li class="first"><a href="./index.html">HOME</a></li>
-                                    <li ><a href="./photoGallery.html">GALLERY</a></li>
-                                    <li class="last"><a href="./contact.html">CONTACT</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a class="active" href="./index.html">HOME</a></li>
+            <li><a href="./photoGallery.html">GALLERY</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-    </div>
+    </nav>
 
 
     <footer>
@@ -47,5 +39,7 @@
             </div>
         </div>
     </footer>
+    
+    <script src="js/app.js"></script>
 </body>
 </html>

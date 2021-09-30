@@ -168,11 +168,17 @@ footer {
 /* Grid Alignment  */
 
 .grid {
+    justify-content: space-around;
+    align-items: center;
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
+
+.grid .grid_item {
+    text-align: center;
+}
+
 .grid img {
-    justify-content: space-around;
     max-height: 250px;
     max-width: 95%;
 }

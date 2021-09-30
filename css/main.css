@@ -39,6 +39,7 @@
 
 .menu {
     overflow: hidden;
+    padding: 0;
 }
 
 .menu .first {
@@ -48,6 +49,7 @@
 .menu .last {
     border-left: 1px solid grey;
 }
+
 .menu a {
     float: right;
     color: black;
@@ -68,30 +70,34 @@
     color: white;
 }
 
-#header, #header-menu {
+#header {
     clear: both;
     background: none;
     text-align: center;
 }
 
+#header-menu {
+    clear: both;
+    background: none;
+}
+
 .header-menu-inside, #header-menu {
     padding: 0;
     margin: 0 auto;
-    width: 1000px;
 }
 
 #header-menu ul.menu, #block-system-user-menu ul.menu {
 	display: block;
 	margin: 0;
-	padding-bottom: 50;
 	position: relative;
 	z-index: 100;
+    text-align: center;
 }
 
 #header-menu ul.menu li {
 	display: inline-block;
 	margin: 0;
-    padding: 0;
+    padding: 0 25 0 25;
     vertical-align: middle;
 	background-color: #fff;
 }
@@ -114,7 +120,7 @@
 .banner_logo {
     margin: 15px 0;
     height: auto;
-    max-width: 440px;
+    max-width: 600px;
 }
 
 footer {
@@ -180,6 +186,7 @@ h2 span.spacer { padding:0 100px; }
 /* Grid Alignment  */
 
 .grid {
+    padding-top: 50;
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }

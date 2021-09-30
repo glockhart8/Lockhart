@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /* Navigation */
 nav {
     display: flex;
@@ -135,10 +136,11 @@ nav {
 
 footer {
     font-family: Gravity_Regular;
-    border-top: 1px solid grey;
+    border-top: 1px solid rgb(226, 226, 226);
     text-align: center;
 	margin: 0 auto;
 	width: 1000px;
+    margin-top: 50px;
 }
 
 /* End Menu & Footer */
@@ -166,7 +168,6 @@ footer {
 /* Grid Alignment  */
 
 .grid {
-    padding-top: 50;
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }

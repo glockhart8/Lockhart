@@ -10,7 +10,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 7vh;
 }
 
 .logo {
@@ -75,27 +75,36 @@ nav {
         justify-content: left;
         align-items: center;
         min-height: 8vh;
+        margin-top: -100px;
     }
     .nav-links {
+        z-index: 1;
         position: absolute;
-        height: 92vh;
-        top: 10vh;
+        height: 100%;
+        top: 0;
         background-color: rgb(226, 226, 226);
         display: block;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 25%;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in;
     }
-    .nav-links li {
+    .nav-links li.first{
         opacity: 0;
-        padding: 60px 0 0 10px;
+        padding: 85 0 0 25;
     }
+
+    .nav-links li.notfirst {
+        opacity: 0;
+        padding: 20 0 0 25;
+    }
+
     .burger {
+        z-index: 2;
         display: block;
         position: absolute;
-        padding: 6.5% 0 0 1%;
+        padding: 5% 0 0 1%;
     }
 
     .landing_img {
@@ -143,10 +152,10 @@ nav {
 }
 
 .banner_logo {
-    margin: 15px 0;
+    /* margin: 15px 0; */
     height: auto;
     max-width: 70%;
-    max-height: 200px;
+    max-height: 175px;
 }
 
 .landing {
